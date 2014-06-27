@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+#front, #about, #info, #contact, #footer {
+  display: block;
+  padding:100px 150px;
+  background-color: grey;
+}
+
+.navbar-fixed-top {
+  height: 100px;
+  opacity: 0.7;
+  background-color: black;
+}
+.navbar-fixed-top a {
+  margin: 20px auto;
+}
+
+.navbar-brand {
+  padding-left: 150px;
+}
+
+.navbar-right {
+  padding-right: 150px;
+
+}
+
+#social-group li {
+  display: inline;
+  list-style-type: none;
+}
