@@ -1,19 +1,28 @@
 body {
+  font-size: 20px;
+  font-family:  Helvetica, Arial, sans-serif;
   text-align: center;
 }
-#front, #about, #info, #contact, #footer {
+
+strong {
+  font-size:  30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 10;
+  color: white;
+}
+p {
+  font-size: 18px;
+}
+
+#front, #about, #info, #porfolio, #footer {
   display: block;
   padding:100px 150px;
-  background-color: grey;
 }
 
 .navbar-fixed-top {
-  height: 100px;
-  opacity: 0.7;
+  height: 80px;
+  opacity: 1;
   background-color: black;
-}
-.navbar-fixed-top a {
-  margin: 20px auto;
 }
 
 .navbar-brand {
@@ -22,10 +31,54 @@ body {
 
 .navbar-right {
   padding-right: 150px;
-
 }
 
 #social-group li {
   display: inline;
   list-style-type: none;
+}
+
+#interests li {
+    list-style-type: none;
+}
+
+#interests {
+  text-align: left;
+}
+
+#portfolio img {
+  max-width:100%;
+  max-height:100%;
+  padding: 20px;
+}
+
+#skills img {
+  height: 128px;
+}
+
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption { 
+  position: absolute; 
+  background: rgba(0,0,0,0.75); 
+  color: white; 
+  padding: 20px 20px; 
+  opacity: 0;
+  bottom: 0; 
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+figcaption p {
+  font-size: 15px;
+}
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
 }

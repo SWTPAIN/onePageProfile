@@ -12,15 +12,15 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">KaFai</a>
+          <a class="navbar-brand" id='name' href="#"><strong>KaFai</strong></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Porfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class='navlink' href="#about">About</a></li>
+            <li><a class="navlink" href="#info">Porfolio</a></li>
+            <li><a class='navlink' href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -29,37 +29,108 @@
     <div class="content">
       <section id='about'>
         <div class="row">
-          <div class='col-md-5' id ='about-text'>
+          <div class='col-md-6' id ='about-text'>
             <h1>about me</h1>
-            <p >I'm a Ruby on Rails developer in Hong Kong. I recently compeleted all three course in Tealeaf Academy, an online RoR bootcamp. Through the class and by my own, I've learnt a lot of important concept including MVC, TDD, working with gem, integrating with api, real application deployment and a lot more.</p>
+            <p >I'm a Ruby on Rails beginner developer in Hong Kong. I recently compeleted all three courses in Tealeaf Academy, an online RoR bootcamp. Through the class and by my own, I've learnt a lot of important concept including MVC, TDD, working with gem, integrating with api, real application deployment and a lot more.</p>
             <p>I graduated from The Chinese University of Hong Kong with bachelor degree in Statistics in 2014. I also worked in BUPA as data analyst before joining Tealeaf Academy.</p>
           </div>
-          <div class='col-md-5' id='about-pic'>
+          <div class='col-md-6' id='about-pic'>
             <div id='pic'>
-              <img id="img-about-word" src="pictures/me.jpeg"
+              <img id="img-about-word" src="pictures/profile.png">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id='interests'>
+            <hr/>
+            <h3>a little more...</h3>
+            <ul>
+            <li><img src="pictures/arrow_icon.png">I like reading book.</li>
+            <li><img src="pictures/arrow_icon.png">I love data visualization.</li>
+            <li><img src="pictures/arrow_icon.png">I lift weight and train for calithenics.</li>
+            <li><img src="pictures/arrow_icon.png">I am trying to be a vegan.</li>
+          </ul>
+        </div>
+        <hr />
+      </section>
+      <section id='info'>
+        <div class="row">
+          <div id='skills'>
+            <div class='col-md-6'>
+              <img src='pictures/pc_icon.png'>
+              <h2>Tech Skills</h2>
+              <h3>Ruby on Rails, JavaScript, SQL, HTML/CSS</h3>
+              <h4>& JAVA, R, Python</h4>
+            </div>
+            <div class='col-md-6'>
+              <img src='pictures/fire_icon.png'>
+              <h2>Passion</h2>
+              <h3>Nothing is more important than passion.<h3>
             </div>
           </div>
         </div>
       </section>
-      <section id='info'>
-        <h1>Skills & Interest</h1>
-        <div class="row">
-          <div class='col-md-5' id='skills'>
-            <h2>SKILLS</h2>
-            <h3>Ruby on Rails, JavaScript, SQL, HTML/CSS</h3>
-            <h4>& JAVA, R, Python</h4>
+      <section id='portfolio'>
+        <h1>Portfolio</h1>
+        <br/>
+        <div class='row'>
+          <div class='col-sm-offset-1 col-sm-5'>
+            <figure>
+              <img src='pictures/myflix.png'>
+              <figcaption>
+                <h4>MyFlix</h4>
+                <p>Clone of Netflix with social interaction feature and video playing. The project focused on Test Driven Development by using Rspec, Capybara, Selenium, VCR and a wide range of testing technique. It also touched the concept beyong MVC, like object composition.
+                <br/>
+                <a href="http://kafai-myflix.herokuapp.com" target="_blank" >Live</a>
+                <a href="http://github.com/KaFaiC/myflix" target="_blank" >Source code</a>
+              </figcaption>
+            </figure>
           </div>
-          <div id='portfolio'>
-            <h2>PORTFOLIO</h2>
+          <div class='col-sm-5'>
+            <figure>
+              <img src='pictures/postit.png'>
+              <figcaption>
+                <h4>Postit</h4>
+                <p>Postit is my first rail project. It covered foundation parts of Rails and also involves advanced topic like polymorphic association, slugging, self-built authentication and building gem. 
+                <br/>
+                <a href="http://kafai-postit.herokuapp.com" target="_blank" >Live</a>
+                <a href="http://github.com/KaFaiC/postit" target="_blank" >Source code</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-offset-1 col-sm-5'>
+            <figure>
+              <img src='pictures/blackjack.png'>
+              <figcaption>
+                <h4>Blackjack</h4>
+                <p>This was a simple Blackjack game app. It was done by using Sinatra. It involves OOP, MVC, ajax and HTTP request/resposne. 
+                <br/>
+                <a href="http://kafai-blackjack.herokuapp.com" target="_blank" >Live </a>
+                <a href="http://github.com/KaFaiC/tl-blackjack-webapp" target="_blank" >Source code</a>
+              </figcaption>
+            </figure>            
+          </div>
+          <div class='col-sm-5'>
+            <figure>
+              <img src='pictures/strech.png'>
+              <figcaption>
+                <h4>Stretch It</h4>
+                <p>This is a very simple strech pad mainly by making use of javascript and jQUery. 
+                <br/>
+                <a href="http://github.com/KaFaiC/playground/tree/master/js_sketch_pad" target="_blank" >Source code</a>
+              </figcaption>
+            </figure>                        
           </div>
         </div>
       </section>
     </div>
 
-    <div class="footer">
+    <div class="footer" id='contact'>
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-md-offset-5" id='social-group'>
+          <div class="col-md-6 col-md-offset-3" id='social-group'>
             <ul>
               <li>
                 <a href='http://github.com/KaFaiC' target="_blank" >
@@ -72,14 +143,18 @@
                 </a>
               </li>
               <li>
-                <img src="pictures/email_icon.png"/>
+                <img src="pictures/email_icon.png"/> choikafai2004@gmail.com
               </li>
             </ul>
           </div>
           <br/>
           <p>
         </div>
-          <p>© 2014 KaFai Choi </p>
+        <div class='row'>
+          <div class="col-md-2 col-md-offset-5">
+            <p>© 2014 KaFai Choi </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
